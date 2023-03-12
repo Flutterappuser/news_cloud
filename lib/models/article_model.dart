@@ -2,10 +2,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/foundation.dart';
 
 class Article {
-  final String title;
-  final String description;
-  final String imageUrl;
-  final String urlToImage;
+  final String? title;
+  final String? description;
+  final String? imageUrl;
+  final String? urlToImage;
 
   Article(
       {required this.title,
