@@ -8,7 +8,7 @@ class NewsApi {
   Future<List<Article>>? fetchArticles() async {
     try {
       http.Response response = await http.get(Uri.parse(
-          'https://newsapi.org/v2/top-headlines?country=eg&apiKey=$apiKey'));
+          'https://newsapi.org/v2/top-headlines?country=ca&apiKey=$apiKey'));
       if (response.statusCode == 200) {
         String data = response.body;
         var jsonData = jsonDecode(data);
